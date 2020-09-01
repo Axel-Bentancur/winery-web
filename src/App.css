@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #edf3f8;
+  --bg-color: #C5CBD3;
 }
 
 body {
@@ -7,14 +7,16 @@ body {
   font-weight: 600;
   line-height: 1.6;
   background-color: var(--bg-color);
-  padding: 30px;
   height: 100vh;
 }
 
 .main {
+  position: relative;
   height: 100%;
+  padding: 30px;
   background-color: var(--bg-color);
   z-index: 1;
+  overflow: hidden;
 }
 
 .main-nav {
@@ -103,6 +105,41 @@ body {
   line-height: 0;
 }
 
-.line-num {
-  background-color: var(--bg-color);
+.svg {
+  position: absolute;
+}
+
+.svg-1 {
+  z-index: -2;
+  fill: #fff;
+  height: 697px;
+  right: -1725px;
+  top: 92px;
+}
+
+.svg-2 {
+  z-index: -1;
+  fill: #886176;
+  height: 1000px;
+  right: -261px;
+  top: -574px;
+  transform: rotate(128deg);
+}
+
+.svg-3 {
+  z-index: -3;
+  fill: #84894A;
+  height: 2000px;
+  right: -587px;
+  top: -615px;
+  transform: rotate(-27deg);
+}
+
+.svg-4 {
+  z-index: -2;
+  fill: #fff;
+  height: 800px;
+  right: -300px;
+  top: -251px;
+  transform: rotate(180deg);
 }
