@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #C5CBD3;
+  --bg-color: #c5cbd3;
 }
 
 body {
@@ -12,9 +12,9 @@ body {
 
 .main {
   position: relative;
-  height: 100%;
+  height: 100vh;
   padding: 30px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color); /*-----probar color */
   z-index: 1;
   overflow: hidden;
 }
@@ -38,20 +38,27 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
+  justify-content: space-around;
 }
 
-.main-nav-item a,
-.link-item a {
-  color: #393939;
-  text-decoration: none;
+.main-nav-item {
+  margin-bottom: 8px;
 }
 
 .main-nav-item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
   margin: 0 40px;
 }
 
 .link-item a {
   margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-item a:hover {
+  border-bottom: 1px solid #000;
 }
 
 .content {
@@ -96,13 +103,21 @@ body {
 
 .line {
   display: flex;
-  width: 25%;
-  justify-content: space-between;
+}
+
+.line-num {
+  display: flex;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .middle-line {
+  min-width: 90px;
+  text-align: center;
   border-bottom: 1px solid #000;
-  line-height: 0;
+  line-height: 0.1;
+  margin-bottom: 10px;
 }
 
 .svg {
@@ -122,13 +137,13 @@ body {
   fill: #886176;
   height: 1000px;
   right: -261px;
-  top: -574px;
-  transform: rotate(128deg);
+  top: -566px;
+  transform: rotate(134deg);
 }
 
 .svg-3 {
   z-index: -3;
-  fill: #84894A;
+  fill: #84894a;
   height: 2000px;
   right: -587px;
   top: -615px;
@@ -142,4 +157,36 @@ body {
   right: -300px;
   top: -251px;
   transform: rotate(180deg);
+}
+
+/*--------------------About-----------------------*/
+
+.about {
+  height: 100vh;
+  padding: 30px;
+}
+
+.about-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about-content {
+  display: flex;
+  margin: auto;
+  width: 70%;
+  background-color: gray;
+  height: 65vh;
+}
+
+ .left-content{
+  width: 50%;
+  background-color: blue;
+  padding: 5rem;
+  font-size: 1vw;
+}
+
+.right-content {
+  width: 50%;
+  background-color: red;
 }

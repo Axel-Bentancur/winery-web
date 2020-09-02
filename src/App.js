@@ -3,46 +3,60 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="main">
-      <div className="main-nav">
+    <div className="web-page">
+      {/*  <div className="main"> 
+      <nav class="navbar navbar-expand-sm navbar-light main-nav">
         <div className="main-nav-logo">
           <h1>PSITIO</h1>
         </div>
-        <ul className="main-nav-list">
-          <li className="main-nav-item">
-            <a href="#Home" className="main-nav-link">
-              Home
-            </a>
-          </li>
-          <li className="main-nav-item">
-            <a href="#Home" className="main-nav-link">
-              About
-            </a>
-          </li>
-          <li className="main-nav-item">
-            <a href="#Home" className="main-nav-link">
-              Wines
-            </a>
-          </li>
-          <li className="main-nav-item">
-            <a href="#Home" className="main-nav-link">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav main-nav-list ml-auto">
+            <li className="main-nav-item">
+              <a href="#home" className="main-nav-link">
+                Home
+              </a>
+            </li>
+            <li className="main-nav-item">
+              <a href="#about" className="main-nav-link">
+                About
+              </a>
+            </li>
+            <li className="main-nav-item">
+              <a href="#wines" className="main-nav-link">
+                Wines
+              </a>
+            </li>
+            <li className="main-nav-item">
+              <a href="#contact" className="main-nav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div className="content">
         <div className="side-left-content">
           <div className="side-left">
             <div className="links">
               <ul className="links-list">
                 <li className="link-item">
-                  <a href="#instagram" className="link-link">
+                  <a href="https://www.instagram.com/" className="link-link">
                     Instagram
                   </a>
                 </li>
                 <li className="link-item">
-                  <a href="#twitter" className="link-link">
+                  <a href="https://twitter.com/" className="link-link">
                     Twitter
                   </a>
                 </li>
@@ -55,7 +69,7 @@ function App() {
             <h2>Lorem ipsum dolor sit amet.</h2>
             <div className="line">
               <span className="line-num">Harvest</span>
-              <span className="middle-line">a </span>
+              <span className="middle-line"> </span>
               <span className="line-num">87</span>
             </div>
           </div>
@@ -65,7 +79,7 @@ function App() {
             <div className="links">
               <ul className="links-list">
                 <li className="link-item">
-                  <a href="#email" className="link-link">
+                  <a href="mailto:psitio@email.com" className="link-link">
                     psitio@email.com
                   </a>
                 </li>
@@ -95,7 +109,11 @@ function App() {
         />
       </svg>
 
-      <svg className='svg svg-3' viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        className="svg svg-3"
+        viewBox="0 0 200 200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           d="M19,13.1C14.4,18.9,-6.5,17.4,-12.4,10.9C-18.3,4.4,-9.1,-7.1,1.3,-6.4C11.8,-5.6,23.6,7.4,19,13.1Z"
           transform="translate(100 100)"
@@ -111,6 +129,29 @@ function App() {
           d="M0,64L26.7,96C53.3,128,107,192,160,208C213.3,224,267,192,320,154.7C373.3,117,427,75,480,69.3C533.3,64,587,96,640,106.7C693.3,117,747,107,800,133.3C853.3,160,907,224,960,245.3C1013.3,267,1067,245,1120,240C1173.3,235,1227,245,1280,218.7C1333.3,192,1387,128,1413,96L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
         ></path>
       </svg>
+    </div>
+  </div> */}
+      <div className="about">
+        <div className="about-title">
+          <h2>Few of our "secret"</h2>
+          <span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi,
+            quis.
+          </span>
+        </div>
+        <div className="about-content">
+          <div className="right-content"></div>
+          <div className="left-content">
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
+              molestias saepe sed quibusdam deleniti expedita nulla ullam,
+              itaque provident eveniet, rerum assumenda exercitationem. Debitis
+              at aut assumenda totam, voluptatibus exercitationem?
+            </p>
+          </div>
+        </div> 
+      </div>
     </div>
   );
 }
